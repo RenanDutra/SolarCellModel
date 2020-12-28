@@ -15,3 +15,10 @@ The main question here is how to make the iterations, i'm probably going for mac
    * Get data from Orcad scv export and open it with matplotlib (just trying to find out how thing work)
    * Take my solar cell equation, than choose the start values for my 4 variables and also the range for V(from 0 to some number)
    * Learn how machine learning works than create some initial model
+
+2nd iteration
+
+After trying the first iteration, i discovered that machine learning is not the best way to solve the problem, best option should be using matlab optimization tools or using a simple brute force, in this case, i will try brute forcing with P.O algorithm for the mpp calculation, than compare with the results from matlab. I will choose a step size for each variable, with this, i will have 4 loops in which i will calculate Isc, Voc and use P.O to calculate the mpp(this is realy cpu intensive)
+
+    * Choose the step size for the iterations
+    * Try not to blow up my PC with the P.O
